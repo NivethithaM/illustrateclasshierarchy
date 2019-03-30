@@ -76,3 +76,11 @@ foreach my $item (keys %$remainingitems) {
 		print "\n";
 	}
 }
+
+#Create a cookie object
+my $cookieobj = Cookies->new();
+#Inherit parent class Items discount and add the cookie class discount
+my $discount = $cookieobj->Discount({
+        DISCOUNTALLITEM => 10,
+})/100;
+print "The total items discount and the discount on cookie is $discount\n";

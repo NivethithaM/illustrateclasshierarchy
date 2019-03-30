@@ -123,4 +123,15 @@ sub GetRemainingInventoryItem {
 	return $totalinventoryitem;
 }
 
+#If Discount needs to be performed for all the items,
+#Parent class will be called for any discount if DISCOUNTALLITEM
+#argument is passed.
+sub Discount {
+        my ($self,$args) = @_;
+        my $discount = 0;
+        if ($args->{DISCOUNTALLITEM}) {
+                $discount = $args->{DISCOUNTALLITEM};
+        }
+        return $discount
+}
 1

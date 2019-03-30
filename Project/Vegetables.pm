@@ -1,7 +1,7 @@
 package Vegetables;
 
 use Data::Dumper;
-
+use base 'Items';
 #Initialize price and quantity
 sub AddPrice {
 	my ($self) = @_;
@@ -27,6 +27,8 @@ sub AddQuantity {
 
 #Method overriding when there is a discount for a specified class of item
 sub Discount {
-
+        my ($self,$args) = @_;
+        my $discount = $self->SUPER::Discount($args);
+        return $discount;
 }
 1

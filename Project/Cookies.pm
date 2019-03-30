@@ -1,5 +1,6 @@
 package Cookies;
 
+use base 'Items';
 #Initialize price and quantity
 sub AddPrice {
 	my ($self) = @_;
@@ -23,7 +24,9 @@ sub AddQuantity {
 
 #Method overriding when there is a discount for a specified class of item
 sub Discount {
-	my ($self) = @_;
-	return '20';
+         my ($self,$args) = @_;
+         my $discount = $self->SUPER::Discount($args);
+         $discount += 20;
+         return $discount;
 }
 1

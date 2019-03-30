@@ -33,4 +33,5 @@ $VAR1 = {
           'PARLEG' => 23,
           'HIDEANDSEEK' => 97
         };
+The total items discount and the discount on cookie is 0.3
 
