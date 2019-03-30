@@ -1,0 +1,36 @@
+When Running testrun.pl,the following output is being returned
+
+Invalid Username and password for User Nive
+Logged in successfully Priya
+Priya is a Admin
+Added Items to inventory and set price and quantity for all the items
+Successfully processed your transaction of amount 271.3
+Successfully processed your transaction of amount 89
+Closing Balance for the day is 360.3
+Remaining items in the inventory
+$VAR1 = {
+          'CARDOMOM' => 24,
+          'PEPPER' => 40
+        };
+
+$VAR1 = {
+          'BEANS' => '10',
+          'TOMATO' => 17,
+          'ONION' => '50',
+          'CARROT' => 8
+        };
+
+$VAR1 = {
+          'APPLE' => '20',
+          'POMO' => 9,
+          'GRAPES' => '25',
+          'ORANGE' => '15'
+        };
+
+$VAR1 = {
+          'TIGER' => 50,
+          'MILKBIKIS' => 75,
+          'PARLEG' => 23,
+          'HIDEANDSEEK' => 97
+        };
+
